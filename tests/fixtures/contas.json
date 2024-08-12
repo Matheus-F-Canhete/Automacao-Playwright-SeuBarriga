@@ -1,0 +1,11 @@
+{
+    "sucesso": {
+        "email": "matheuscanhete3@gmail.com",
+        "senha": "TesteTestinha",
+        "confirma": "Bem vindo, Matheus!",
+        "nomeDeConta": "Aluguel",
+        "nomeDeContaPraDeletar": "Água",
+        "nomeDeContaPraEditar": "Gás",
+        "nomeDeContaEditada": "Mercado"
+    }
+}

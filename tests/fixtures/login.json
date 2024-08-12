@@ -1,0 +1,27 @@
+{
+    "sucesso": {
+        "email": "matheuscanhete3@gmail.com",
+        "senha": "TesteTestinha",
+        "confirma": "Bem vindo, Matheus!"
+    },
+    "semEmail": {
+        "email": "",
+        "senha": "TesteTestinha",
+        "confirma": "Email é um campo obrigatório"
+    },
+    "semSenha": {
+        "email": "matheuscanhete3@gmail.com",
+        "senha": "",
+        "confirma": "Senha é um campo obrigatório"
+    },
+    "emailErrado": {
+        "email": "matheuscanhete3@gmail.com.br",
+        "senha": "TesteTestinha",
+        "confirma": "Problemas com o login do usuário"        
+    },
+    "senhaErrada": {
+        "email": "matheuscanhete3@gmail.com",
+        "senha": "TesteTestinha123",
+        "confirma": "Problemas com o login do usuário"
+    }
+}
