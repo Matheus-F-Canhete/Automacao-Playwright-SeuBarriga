@@ -39,4 +39,21 @@ export class LoginPage {
         const loginConfirmation = this.page.locator('.alert')
         await expect(loginConfirmation).toHaveText(dados.confirma)
     }
+
+    async login(dados) {
+        await this.go()
+        await this.preencherEmail(dados)
+        await this.preencherSenha(dados)
+        await this.clicarBotao()
+        await this.confirmaSucesso(dados)
+    }
+
+    async clicarBotaoSair() {
+        const botaoSair = this.page.locator('text=Sair')
+        await botaoSair.click()
+    }
+
+    async confirmarLogout() {
+        await expect(this.page).toHaveTitle('Seu Barriga - Log in')
+    }
 }

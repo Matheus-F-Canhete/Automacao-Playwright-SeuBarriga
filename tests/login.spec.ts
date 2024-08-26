@@ -66,3 +66,10 @@ test('Senha errada', async ({ page }) => {
     await loginPage.clicarBotao()
     await loginPage.confirmaSucesso(dados)
 })
+
+test.only("LogOut", async ({ page }) => {
+    const dados = data.sucesso as ModeloDelogin
+    await loginPage.login(dados)
+    await loginPage.clicarBotaoSair()
+    await loginPage.confirmarLogout()
+})
