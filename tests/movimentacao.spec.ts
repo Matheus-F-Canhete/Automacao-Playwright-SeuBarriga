@@ -9,6 +9,8 @@ let movimentacaoPage: MovimentacaoPage
 const dados = data.sucesso as ModeloDeMovimentacao
 const gerarConta = faker.word.noun()
 
+test.describe('Testes de Movimentação', ()=> {
+
 test.beforeEach(async ({ page }) => {
     movimentacaoPage = new MovimentacaoPage(page)
 
@@ -24,4 +26,6 @@ test.only('Criar uma movimentação', async ({ page }) => {
     await movimentacaoPage.criarConta(gerarConta)
     await movimentacaoPage.acessarMovimentacoes()
     await movimentacaoPage.criarMovimentacaoSucesso(dados,gerarConta)
+})
+
 })
